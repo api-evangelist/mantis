@@ -1,22 +1,67 @@
 aid: mantis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mantis.png
 name: Mantis
-description: Mantis is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Mantis (Mantis Biotech) builds predictive digital twins of individual people,
+  aggregating personal data streams — wearables, digital activity, and clinical
+  records — into high-fidelity models by combining large language models with
+  physics-based simulation. The company positions itself as a neutral
+  intermediary for personal predictive models — an "OAuth for identity" or
+  "Plaid for banking" layer — letting individuals grant scoped, revocable access
+  to their twin to healthcare providers and third-party builders. Applications
+  include pre-symptomatic infection detection, cognitive baseline monitoring,
+  heart-failure decompensation forecasting, medication-adherence prediction,
+  post-operative recovery trajectories, psychiatric relapse early warning, and
+  running trials on twins. Mantis is a Y Combinator (Winter 2026) company; as of
+  this profile it publishes a marketing site and manifesto but no public API,
+  developer portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/mantis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
+x-yc-batch: W2026
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-company-contact: georgia@mantisbiotech.com
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Digital Twins
+- Healthcare
+- Predictive Analytics
+- Wearables
+- Health Data
+- Artificial Intelligence
+- Biotech
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/mantis-domain-security.yml
+- type: Website
+  url: https://mantisbiotech.com/
+  name: Mantis Biotech
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
